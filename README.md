@@ -14,8 +14,19 @@ leetcode-solutions/
 │   └── java-template.java
 ├── scripts/            # Automation scripts
 │   └── add-solution.ps1
-└── YYYY-MM-DD-Problem-Name/  # Individual problem solutions
+└── YYYY-MM-DD-ProblemNumber-Problem-Name/  # Individual problem solutions
     └── solution.{ext}
+```
+
+**Example Directory Structure:**
+```
+leetcode-solutions/
+├── 2026-03-31-26-Remove-Duplicates-from-Sorted-Array/
+│   └── solution.java
+├── 2026-04-01-1-Two-Sum/
+│   └── solution.py
+└── 2026-04-02-15-3Sum/
+    └── solution.js
 ```
 
 ## 🚀 Quick Start
@@ -24,10 +35,11 @@ leetcode-solutions/
 
 1. **Add a new solution:**
    ```powershell
-   .\leetcode-solutions\scripts\add-solution.ps1 -ProblemName "Two Sum" -ProblemLink "https://leetcode.com/problems/two-sum/" -Difficulty "Easy" -Language "python" -MethodName "twoSum"
+   .\leetcode-solutions\scripts\add-solution.ps1 -ProblemNumber 26 -ProblemName "Remove Duplicates from Sorted Array" -ProblemLink "https://leetcode.com/problems/remove-duplicates-from-sorted-array/" -Difficulty "Easy" -Language "java" -MethodName "removeDuplicates"
    ```
 
 2. **Parameters:**
+   - `-ProblemNumber`: LeetCode problem number (e.g., 26, 1, 15)
    - `-ProblemName`: Name of the LeetCode problem
    - `-ProblemLink`: URL to the problem
    - `-Difficulty`: Easy, Medium, or Hard
@@ -51,10 +63,16 @@ leetcode-solutions/
 
 ### Manual Process
 
-1. Create a new directory: `YYYY-MM-DD-Problem-Name`
+1. Create a new directory: `YYYY-MM-DD-ProblemNumber-Problem-Name`
 2. Copy the appropriate template from `templates/`
 3. Rename it to `solution.{ext}`
 4. Fill in the placeholders and implement your solution
+
+**Example:**
+```bash
+mkdir "2026-03-31-26-Remove-Duplicates-from-Sorted-Array"
+cp templates/java-template.java "2026-03-31-26-Remove-Duplicates-from-Sorted-Array/solution.java"
+```
 
 ## 📋 Solution Template
 
