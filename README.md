@@ -14,18 +14,18 @@ leetcode-solutions/
 │   └── java-template.java
 ├── scripts/            # Automation scripts
 │   └── add-solution.ps1
-└── YYYY-MM-DD-ProblemNumber-Problem-Name/  # Individual problem solutions
+└── ProblemNumber-Problem-Name/  # Individual problem solutions
     └── solution.{ext}
 ```
 
 **Example Directory Structure:**
 ```
 leetcode-solutions/
-├── 2026-03-31-26-Remove-Duplicates-from-Sorted-Array/
+├── 26-Remove-Duplicates-from-Sorted-Array/
 │   └── solution.java
-├── 2026-04-01-1-Two-Sum/
+├── 1-Two-Sum/
 │   └── solution.py
-└── 2026-04-02-15-3Sum/
+└── 15-3Sum/
     └── solution.js
 ```
 
@@ -63,15 +63,15 @@ leetcode-solutions/
 
 ### Manual Process
 
-1. Create a new directory: `YYYY-MM-DD-ProblemNumber-Problem-Name`
+1. Create a new directory: `ProblemNumber-Problem-Name`
 2. Copy the appropriate template from `templates/`
 3. Rename it to `solution.{ext}`
 4. Fill in the placeholders and implement your solution
 
 **Example:**
 ```bash
-mkdir "2026-03-31-26-Remove-Duplicates-from-Sorted-Array"
-cp templates/java-template.java "2026-03-31-26-Remove-Duplicates-from-Sorted-Array/solution.java"
+mkdir "26-Remove-Duplicates-from-Sorted-Array"
+cp templates/java-template.java "26-Remove-Duplicates-from-Sorted-Array/solution.java"
 ```
 
 ## 📋 Solution Template
