@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibrantMart - Colorful Shopping Experience</title>
+    <meta name="description" content="Experience shopping like never before with our vibrant e-commerce platform">
+    <meta name="keywords" content="ecommerce, shopping, colorful, vibrant, online store">
+    
+    <!-- External Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Welcome to VibrantMart</h2>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <i class="fas fa-store"></i> VibrantMart
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#categories">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deals">Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-icons">
+                        <div class="search-box">
+                            <input type="text" class="search-input" placeholder="Search products...">
+                            <button class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <button class="icon-btn user-btn" id="user-btn">
+                            <i class="fas fa-user"></i>
+                            <span class="badge">0</span>
+                        </button>
+                        <button class="icon-btn cart-btn" id="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge" id="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="gradient-bg"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h1 class="display-2 fw-bold mb-4">
+                        Shop in <span class="text-gradient">Color</span>
+                    </h1>
+                    <p class="lead mb-4">
+                        Discover a world of vibrant products that bring joy to your shopping experience
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-shopping-bag me-2"></i>Shop Now
+                        </a>
+                        <a href="#deals" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-tag me-2"></i>View Deals
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Products</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="product-showcase">
+                        <div class="showcase-item">
+                            <img src="https://picsum.photos/seed/product1/200/200.jpg" alt="Product">
+                        </div>
+                        <div class="showcase-item">
+                            <img src="https://picsum.photos/seed/product2/200/200.jpg" alt="Product">
+                        </div>
+                        <div class="showcase-item">
+                            <img src="https://picsum.photos/seed/product3/200/200.jpg" alt="Product">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Shop by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="electronics" data-aos="zoom-in">
+                    <div class="category-bg electronics-bg"></div>
+                    <div class="category-content">
+                        <i class="fas fa-laptop"></i>
+                        <h3>Electronics</h3>
+                        <p>Latest gadgets & tech</p>
+                        <span class="category-count">245 products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="fashion" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-bg fashion-bg"></div>
+                    <div class="category-content">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Fashion</h3>
+                        <p>Trendy clothes & accessories</p>
+                        <span class="category-count">532 products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="home" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-bg home-bg"></div>
+                    <div class="category-content">
+                        <i class="fas fa-home"></i>
+                        <h3>Home & Living</h3>
+                        <p>Decor & furniture</p>
+                        <span class="category-count">189 products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="sports" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-bg sports-bg"></div>
+                    <div class="category-content">
+                        <i class="fas fa-football-ball"></i>
+                        <h3>Sports</h3>
+                        <p>Fitness & outdoor gear</p>
+                        <span class="category-count">156 products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="beauty" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-bg beauty-bg"></div>
+                    <div class="category-content">
+                        <i class="fas fa-spa"></i>
+                        <h3>Beauty</h3>
+                        <p>Skincare & makeup</p>
+                        <span class="category-count">298 products</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="books" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="category-bg books-bg"></div>
+                    <div class="category-content">
+                        <i class="fas fa-book"></i>
+                        <h3>Books</h3>
+                        <p>Read & learn</p>
+                        <span class="category-count">412 products</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-filters">
+                    <select class="filter-select" id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Living</option>
+                        <option value="sports">Sports</option>
+                        <option value="beauty">Beauty</option>
+                        <option value="books">Books</option>
+                    </select>
+                    <select class="filter-select" id="sort-filter">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Best Rating</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+            
+            <div class="load-more-container">
+                <button class="btn btn-primary btn-lg" id="load-more">
+                    <i class="fas fa-plus me-2"></i>Load More Products
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Hot Deals 🔥</h2>
+            <div class="deals-carousel">
+                <div class="deal-card">
+                    <div class="deal-badge">-50%</div>
+                    <img src="https://picsum.photos/seed/deal1/300/200.jpg" alt="Deal">
+                    <div class="deal-content">
+                        <h3>Flash Sale</h3>
+                        <p>Limited time offer</p>
+                        <div class="deal-timer">
+                            <span>02:45:30</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="deal-card">
+                    <div class="deal-badge">-30%</div>
+                    <img src="https://picsum.photos/seed/deal2/300/200.jpg" alt="Deal">
+                    <div class="deal-content">
+                        <h3>Weekend Special</h3>
+                        <p>Weekend only deals</p>
+                        <div class="deal-timer">
+                            <span>01:23:45</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="deal-card">
+                    <div class="deal-badge">-70%</div>
+                    <img src="https://picsum.photos/seed/deal3/300/200.jpg" alt="Deal">
+                    <div class="deal-content">
+                        <h3>Clearance Sale</h3>
+                        <p>Stock clearance</p>
+                        <div class="deal-timer">
+                            <span>03:12:15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="mb-3">Get Exclusive Deals</h2>
+                <p class="mb-4">Subscribe to our newsletter and never miss amazing deals!</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-paper-plane me-2"></i>Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h3><i class="fas fa-store"></i> VibrantMart</h3>
+                    <p>Your colorful shopping destination with amazing products and unbeatable deals.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 mb-4">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 mb-4">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Shopping St, City, State 12345</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> support@vibrantmart.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VibrantMart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart" id="close-cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: $<span id="cart-total">0.00</span></span>
+                </div>
+                <button class="btn btn-primary btn-lg checkout-btn">
+                    <i class="fas fa-credit-card me-2"></i>Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="product-modal" id="product-modal">
+        <div class="product-modal-content">
+            <div class="product-modal-header">
+                <h3>Product Details</h3>
+                <button class="close-product-modal" id="close-product-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="product-modal-body" id="product-modal-body">
+                <!-- Product details will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- User Login Modal -->
+    <div class="user-modal" id="user-modal">
+        <div class="user-modal-content">
+            <div class="user-modal-header">
+                <h3>Account Login</h3>
+                <button class="close-user-modal" id="close-user-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="user-modal-body">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Login</button>
+                    <p class="text-center mt-3">
+                        Don't have an account? <a href="#">Sign up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
