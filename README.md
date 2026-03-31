@@ -1,275 +1,131 @@
-# VibrantMart E-commerce Website
+# LeetCode Solutions
 
-A vibrant, full-stack e-commerce website with Node.js backend and modern frontend.
+> **A comprehensive collection of algorithmic problem solutions demonstrating consistent daily practice and problem-solving skills**
+
+This repository showcases my systematic approach to mastering data structures and algorithms through daily LeetCode problem-solving. As a passionate computer science student, I maintain this collection to document my learning journey, analyze algorithmic complexities, and develop clean, efficient code solutions.
+
+## 📁 Directory Structure
+
+```
+leetcode-solutions/
+├── templates/           # Solution templates for different languages
+│   ├── python-template.py
+│   ├── javascript-template.js
+│   └── java-template.java
+├── scripts/            # Automation scripts
+│   └── add-solution.ps1
+└── YYYY-MM-DD-Problem-Name/  # Individual problem solutions
+    └── solution.{ext}
+```
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB (installed and running)
-- Git
+### Using the Automation Script (Recommended)
 
-### Installation
+1. **Add a new solution:**
+   ```powershell
+   .\leetcode-solutions\scripts\add-solution.ps1 -ProblemName "Two Sum" -ProblemLink "https://leetcode.com/problems/two-sum/" -Difficulty "Easy" -Language "python" -MethodName "twoSum"
+   ```
 
-1. **Install Dependencies**
+2. **Parameters:**
+   - `-ProblemName`: Name of the LeetCode problem
+   - `-ProblemLink`: URL to the problem
+   - `-Difficulty`: Easy, Medium, or Hard
+   - `-Language`: python, javascript, or java
+   - `-MethodName`: The main method name for the solution
+   - `-Description` (optional): Brief description of your approach
+   - `-TimeComplexity` (optional): Time complexity analysis
+   - `-SpaceComplexity` (optional): Space complexity analysis
+
+3. **Complete your solution:**
+   - Navigate to the created directory
+   - Implement your solution in the generated file
+   - Test your implementation
+
+4. **Commit and push:**
    ```bash
-   npm install
+   git add .
+   git commit -m "Add solution for [Problem Name]"
+   git push origin main
    ```
 
-2. **Start MongoDB**
-   - **Option 1: MongoDB Community Server**
-     - Download and install from [mongodb.com](https://www.mongodb.com/try/download/community)
-     - Start MongoDB service
-     ```bash
-     # On Windows (as Administrator)
-     net start MongoDB
-     
-     # Or start manually
-     "C:\Program Files\MongoDB\Server\7.0\bin\mongod.exe" --dbpath="C:\data\db"
-     ```
+### Manual Process
 
-   - **Option 2: MongoDB Atlas (Cloud)**
-     - Sign up at [cloud.mongodb.com](https://cloud.mongodb.com/)
-     - Create a free cluster
-     - Get connection string and update `.env` file
+1. Create a new directory: `YYYY-MM-DD-Problem-Name`
+2. Copy the appropriate template from `templates/`
+3. Rename it to `solution.{ext}`
+4. Fill in the placeholders and implement your solution
 
-   - **Option 3: Docker**
-     ```bash
-     docker run -d -p 27017:27017 --name mongodb mongo:latest
-     ```
+## 📋 Solution Template
 
-3. **Configure Environment**
-   - Copy `.env` file and update MongoDB URI:
-   ```env
-   MONGODB_URI=mongodb://localhost:27017/vibrantmart
-   ```
+Each solution includes:
+- Problem metadata (name, link, difficulty, date)
+- Time and space complexity analysis
+- Brief description of the approach
+- Test cases for verification
 
-4. **Start the Server**
-   ```bash
-   # Development mode
-   npm run dev
-   
-   # Production mode
-   npm start
-   ```
+## 🎯 Learning Objectives
 
-5. **Access the Application**
-   - Frontend: http://localhost:5000
-   - User Dashboard: http://localhost:5000/dashboard
-   - Admin Panel: http://localhost:5000/admin
+- **Algorithm Mastery**: Develop proficiency in various algorithmic paradigms (Greedy, Dynamic Programming, Divide & Conquer, etc.)
+- **Data Structure Expertise**: Implement and optimize solutions using arrays, trees, graphs, hash tables, and more
+- **Complexity Analysis**: Practice rigorous time and space complexity analysis (Big O notation)
+- **Code Quality**: Write clean, maintainable, and well-documented code following industry best practices
+- **Problem-Solving Patterns**: Identify and apply common problem-solving patterns and techniques
 
-## 📋 MongoDB Setup Guide
+## 📊 Problem Categories Covered
 
-### Windows Installation
+- **Array & String Manipulation**
+- **Linked Lists & Trees** 
+- **Graph Algorithms**
+- **Dynamic Programming**
+- **Backtracking & Recursion**
+- **Sorting & Searching**
+- **Hash Tables & Sets**
+- **Stacks & Queues**
+- **Bit Manipulation**
+- **Mathematical Algorithms**
 
-1. **Download MongoDB Community Server**
-   - Go to [MongoDB Download Center](https://www.mongodb.com/try/download/community)
-   - Select Windows version
-   - Choose MSI package
-   - Download and run installer
+## 🏆 Progress Tracking
 
-2. **Installation Steps**
-   - Run the MSI installer as Administrator
-   - Choose "Complete" installation
-   - Install "MongoDB Compass" (GUI tool)
-   - Install as a Windows Service
-   - Leave default settings
+- **Total Problems Solved**: 198
+- **Easy**: [Count] - Building foundation and confidence
+- **Medium**: [Count] - Developing problem-solving strategies  
+- **Hard**: [Count] - Advanced algorithmic thinking
+- **Current Streak**: [Number] days - Demonstrating consistency and dedication
 
-3. **Verify Installation**
-   ```bash
-   # Check MongoDB version
-   mongod --version
-   
-   # Check if service is running
-   sc query MongoDB
-   ```
+## 📚 Technical Skills Demonstrated
 
-4. **Start MongoDB Service**
-   ```bash
-   # Start service
-   net start MongoDB
-   
-   # Stop service
-   net stop MongoDB
-   ```
+### Programming Languages
+- **Python** 🐍 - Rapid prototyping and clean syntax
+- **JavaScript** 🟨 - Web development and algorithmic thinking
+- **Java** ☕ - Object-oriented design and enterprise solutions
 
-### Testing MongoDB Connection
+### Core Competencies
+- **Algorithm Design & Analysis**
+- **Data Structure Implementation**
+- **Time & Space Complexity Optimization**
+- **Problem Decomposition**
+- **Debugging & Testing**
+- **Code Documentation**
+- **Version Control with Git**
 
-1. **Using MongoDB Compass**
-   - Open MongoDB Compass
-   - Connection string: `mongodb://localhost:27017`
-   - Click "Connect"
-   - You should see the connection successful
+## 💼 Professional Development
 
-2. **Using Command Line**
-   ```bash
-   # Open MongoDB shell
-   mongo
-   
-   # Or with newer versions
-   mongosh
-   
-   # Test commands
-   show dbs
-   use vibrantmart
-   db.test.insertOne({test: "connection"})
-   db.test.find()
-   ```
+This repository serves as evidence of:
+- **Consistent Learning Habits**: Daily problem-solving demonstrates discipline and commitment
+- **Technical Growth**: Progression from simple to complex problems shows learning trajectory
+- **Code Quality**: Well-documented solutions with complexity analysis
+- **Problem-Solving Mindset**: Systematic approach to tackling technical challenges
+- **Self-Driven Learning**: Initiative to improve skills beyond coursework
 
-3. **Using Node.js Script**
-   ```bash
-   # Test connection with Node
-   node test-mongodb.js
-   ```
+## 📞 Connect With Me
 
-## 🔧 Environment Variables
+- **GitHub**: [Deepika-Sirivella2904](https://github.com/Deepika-Sirivella2904)
+- **LeetCode**: [Deepika_2904](https://leetcode.com/u/Deepika_2904/)
+- **LinkedIn**: [Add your LinkedIn profile if available]
 
-Create a `.env` file with the following:
+---
 
-```env
-NODE_ENV=development
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/vibrantmart
-JWT_SECRET=your_super_secret_jwt_key_here_change_in_production
-JWT_EXPIRE=7d
-```
+> *"Every problem solved is a step closer to mastery. This collection represents not just answers, but the journey of becoming a better problem solver and software engineer."*
 
-## 📁 Project Structure
-
-```
-2048/
-├── server.js              # Main server file
-├── package.json           # Dependencies
-├── .env                  # Environment variables
-├── models/               # Database models
-│   ├── User.js
-│   ├── Product.js
-│   └── Order.js
-├── routes/               # API routes
-│   ├── auth.js
-│   ├── products.js
-│   ├── users.js
-│   ├── orders.js
-│   └── admin.js
-├── middleware/           # Custom middleware
-├── uploads/             # File uploads
-├── index.html           # Main frontend
-├── dashboard.html       # User dashboard
-├── styles.css          # Styling
-└── script.js          # Frontend logic
-```
-
-## 🛠 API Endpoints
-
-### Authentication
-- `POST /api/auth/register` - Register user
-- `POST /api/auth/login` - Login user
-- `GET /api/auth/profile` - Get user profile
-- `PUT /api/auth/profile` - Update profile
-
-### Products
-- `GET /api/products` - Get all products
-- `GET /api/products/:id` - Get product by ID
-- `POST /api/products` - Create product (admin)
-- `PUT /api/products/:id` - Update product (admin)
-- `DELETE /api/products/:id` - Delete product (admin)
-
-### Orders
-- `GET /api/orders` - Get orders (admin)
-- `POST /api/orders` - Create order
-- `GET /api/orders/:id` - Get order by ID
-- `PUT /api/orders/:id/status` - Update order status
-
-### Users
-- `GET /api/users/cart` - Get user cart
-- `POST /api/users/cart` - Add to cart
-- `PUT /api/users/cart/:productId` - Update cart item
-- `DELETE /api/users/cart/:productId` - Remove from cart
-
-### Admin
-- `GET /api/admin/dashboard` - Dashboard stats
-- `GET /api/admin/products` - Manage products
-- `GET /api/admin/users` - Manage users
-- `GET /api/admin/analytics` - Get analytics
-
-## 🎨 Features
-
-### Frontend
-- Responsive design with vibrant colors
-- Product catalog with filtering
-- Shopping cart functionality
-- User authentication
-- Order tracking
-- Wishlist management
-- User dashboard
-
-### Backend
-- RESTful API with Express.js
-- MongoDB database with Mongoose
-- JWT authentication
-- File upload support
-- Order processing
-- Admin panel
-- Analytics dashboard
-
-## 🐛 Troubleshooting
-
-### MongoDB Connection Issues
-
-1. **Check if MongoDB is running**
-   ```bash
-   # Windows
-   sc query MongoDB
-   
-   # Check process
-   tasklist | findstr mongod
-   ```
-
-2. **Common Issues**
-   - **Port 27017 already in use**: Kill existing MongoDB process
-   - **Permission denied**: Run as Administrator
-   - **Service not found**: Reinstall MongoDB as service
-
-3. **Reset MongoDB**
-   ```bash
-   # Stop service
-   net stop MongoDB
-   
-   # Clear data directory (optional)
-   rmdir /s "C:\data\db"
-   
-   # Restart service
-   net start MongoDB
-   ```
-
-### Server Issues
-
-1. **Port 5000 already in use**
-   ```bash
-   # Find process using port 5000
-   netstat -ano | findstr :5000
-   
-   # Kill process
-   taskkill /PID <PID> /F
-   ```
-
-2. **Module not found**
-   ```bash
-   # Reinstall dependencies
-   npm install
-   
-   # Clear cache
-   npm cache clean --force
-   ```
-
-## 📞 Support
-
-For issues and questions:
-1. Check the troubleshooting section
-2. Verify MongoDB is running
-3. Check environment variables
-4. Review server logs
-
-## 📄 License
-
-MIT License
+**🚀 Open to opportunities and collaborations in software development!**
