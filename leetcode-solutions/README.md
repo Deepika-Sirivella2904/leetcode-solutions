@@ -122,7 +122,7 @@ This repository serves as evidence of:
 
 - **GitHub**: [Deepika-Sirivella2904](https://github.com/Deepika-Sirivella2904)
 - **LeetCode**: [Deepika_2904](https://leetcode.com/u/Deepika_2904/)
-- **LinkedIn**: [Add your LinkedIn profile if available]
+- **LinkedIn**: [(https://www.linkedin.com/in/sirivella-deepika-a36523354/)]
 
 ---
 
