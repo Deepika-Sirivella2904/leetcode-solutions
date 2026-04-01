@@ -64,6 +64,25 @@ Each solution includes:
 - Brief description of the approach
 - Test cases for verification
 
+## ✅ Solved Problems
+
+### Array & String Manipulation
+
+1. **[26. Remove Duplicates from Sorted Array](26-Remove-Duplicates-from-Sorted-Array/)**
+   - **Difficulty**: Easy
+   - **Language**: Java
+   - **Approach**: Two-pointer technique
+   - **Time Complexity**: O(n)
+   - **Space Complexity**: O(1)
+
+2. **[27. Remove Element](27-Remove-Element/)**
+   - **Difficulty**: Easy
+   - **Language**: Java
+   - **Approach**: Two-pointer technique
+   - **Time Complexity**: O(n)
+   - **Space Complexity**: O(1)
+   - **Submission**: https://leetcode.com/problems/remove-element/submissions/1499425594/
+
 ## � Learning Objectives
 
 - **Algorithm Mastery**: Develop proficiency in various algorithmic paradigms (Greedy, Dynamic Programming, Divide & Conquer, etc.)
@@ -122,7 +141,7 @@ This repository serves as evidence of:
 
 - **GitHub**: [Deepika-Sirivella2904](https://github.com/Deepika-Sirivella2904)
 - **LeetCode**: [Deepika_2904](https://leetcode.com/u/Deepika_2904/)
-- **LinkedIn**: [Add your LinkedIn profile if available]
+- **LinkedIn**: [(https://www.linkedin.com/in/sirivella-deepika-a36523354/)]
 
 ---
 

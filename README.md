@@ -4,6 +4,8 @@
 
 This repository showcases my systematic approach to mastering data structures and algorithms through daily LeetCode problem-solving. As a passionate computer science student, I maintain this collection to document my learning journey, analyze algorithmic complexities, and develop clean, efficient code solutions.
 
+**🔗 Repository URL**: https://github.com/Deepika-Sirivella2904/leetcode-solutions/tree/main/leetcode-solutions
+
 ## 📁 Directory Structure
 
 ```
@@ -139,7 +141,8 @@ This repository serves as evidence of:
 ## 📞 Connect With Me
 
 - **GitHub**: [Deepika-Sirivella2904](https://github.com/Deepika-Sirivella2904)
-- **LeetCode**: [Deepika_2904](https://leetcode.com/u/Deepika_2904/)
+- **LeetCode Solutions Repository**: https://github.com/Deepika-Sirivella2904/leetcode-solutions/tree/main/leetcode-solutions
+- **LeetCode Profile**: [Deepika_2904](https://leetcode.com/u/Deepika_2904/)
 - **LinkedIn**: [Add your LinkedIn profile if available]
 
 ---
