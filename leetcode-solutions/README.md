@@ -83,6 +83,14 @@ Each solution includes:
    - **Space Complexity**: O(1)
    - **Submission**: https://leetcode.com/problems/remove-element/submissions/1499425594/
 
+3. **[1768. Merge Strings Alternately](1768-Merge-Strings-Alternately/)**
+   - **Difficulty**: Easy
+   - **Language**: Java
+   - **Approach**: String manipulation with alternating characters
+   - **Time Complexity**: O(n)
+   - **Space Complexity**: O(n)
+   - **Submission**: https://leetcode.com/problems/merge-strings-alternately/submissions/1503791522/
+
 ## � Learning Objectives
 
 - **Algorithm Mastery**: Develop proficiency in various algorithmic paradigms (Greedy, Dynamic Programming, Divide & Conquer, etc.)
