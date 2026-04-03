@@ -91,6 +91,14 @@ Each solution includes:
    - **Space Complexity**: O(n)
    - **Submission**: https://leetcode.com/problems/merge-strings-alternately/submissions/1503791522/
 
+4. **[1470. Shuffle the Array](1470-Shuffle-the-Array/)**
+   - **Difficulty**: Easy
+   - **Language**: Java
+   - **Approach**: Two-pointer array interleaving
+   - **Time Complexity**: O(n)
+   - **Space Complexity**: O(n)
+   - **Submission**: https://leetcode.com/problems/shuffle-the-array/submissions/1556894591/
+
 ## � Learning Objectives
 
 - **Algorithm Mastery**: Develop proficiency in various algorithmic paradigms (Greedy, Dynamic Programming, Divide & Conquer, etc.)
