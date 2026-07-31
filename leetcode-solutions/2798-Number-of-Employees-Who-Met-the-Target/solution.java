@@ -7,34 +7,14 @@
  */
 
 class Solution {
-    /**
-     * Time Complexity: O(n)
-     * Space Complexity: O(1)
-     * 
-     * Count the number of employees who worked at least target hours.
-     * Approach: Iterate through the hours array and count employees with hours >= target.
-     * 
-     * @param hours Array of hours worked by each employee
-     * @param target Minimum hours required to meet the target
-     * @return int Number of employees who met the target
-     */
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
-        int ans = 0;
-        for (int x : hours) {
-            if (x >= target) {
-                ++ans;
+        int c=0;
+        for (int i=0;i<hours.length;i++){
+            if(hours[i]>=target){
+                c++;
             }
         }
-        return ans;
-    }
-    
-    /**
-     * Alternative solution using Java streams
-     */
-    public int numberOfEmployeesWhoMetTargetStream(int[] hours, int target) {
-        return (int) java.util.Arrays.stream(hours)
-                .filter(hour -> hour >= target)
-                .count();
+        return c;
     }
 }
 
@@ -72,11 +52,6 @@ public class Main {
         int[] hours6 = {100};
         int result6 = solution.numberOfEmployeesWhoMetTarget(hours6, 50);
         System.out.println("Test 6: hours = [100], target = 50 => " + result6); // 1
-        
-        // Test stream method
-        System.out.println("\nTesting stream method:");
-        System.out.println("Stream Test 1: " + solution.numberOfEmployeesWhoMetTargetStream(hours1, 2)); // 3
-        System.out.println("Stream Test 2: " + solution.numberOfEmployeesWhoMetTargetStream(hours2, 6)); // 0
         
         System.out.println("All test cases completed!");
     }
