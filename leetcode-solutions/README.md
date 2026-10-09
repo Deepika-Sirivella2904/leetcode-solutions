@@ -64,40 +64,8 @@ Each solution includes:
 - Brief description of the approach
 - Test cases for verification
 
-## ✅ Solved Problems
 
-### Array & String Manipulation
-
-1. **[26. Remove Duplicates from Sorted Array](26-Remove-Duplicates-from-Sorted-Array/)**
-   - **Difficulty**: Easy
-   - **Language**: Java
-   - **Approach**: Two-pointer technique
-   - **Time Complexity**: O(n)
-   - **Space Complexity**: O(1)
-
-2. **[27. Remove Element](27-Remove-Element/)**
-   - **Difficulty**: Easy
-   - **Language**: Java
-   - **Approach**: Two-pointer technique
-   - **Time Complexity**: O(n)
-   - **Space Complexity**: O(1)
    - **Submission**: https://leetcode.com/problems/remove-element/submissions/1499425594/
-
-3. **[1768. Merge Strings Alternately](1768-Merge-Strings-Alternately/)**
-   - **Difficulty**: Easy
-   - **Language**: Java
-   - **Approach**: String manipulation with alternating characters
-   - **Time Complexity**: O(n)
-   - **Space Complexity**: O(n)
-   - **Submission**: https://leetcode.com/problems/merge-strings-alternately/submissions/1503791522/
-
-4. **[1470. Shuffle the Array](1470-Shuffle-the-Array/)**
-   - **Difficulty**: Easy
-   - **Language**: Java
-   - **Approach**: Two-pointer array interleaving
-   - **Time Complexity**: O(n)
-   - **Space Complexity**: O(n)
-   - **Submission**: https://leetcode.com/problems/shuffle-the-array/submissions/1556894591/
 
 ## � Learning Objectives
 
